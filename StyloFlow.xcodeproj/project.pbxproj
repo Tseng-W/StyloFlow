@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		71174C172B1FD325008CB0BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C162B1FD325008CB0BC /* AppDelegate.swift */; };
 		71174C192B1FD325008CB0BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C182B1FD325008CB0BC /* SceneDelegate.swift */; };
-		71174C1B2B1FD325008CB0BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C1A2B1FD325008CB0BC /* ViewController.swift */; };
-		71174C1E2B1FD325008CB0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71174C1C2B1FD325008CB0BC /* Main.storyboard */; };
 		71174C202B1FD328008CB0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71174C1F2B1FD328008CB0BC /* Assets.xcassets */; };
 		71174C232B1FD328008CB0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71174C212B1FD328008CB0BC /* LaunchScreen.storyboard */; };
 		71174C2E2B1FD328008CB0BC /* StyloFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C2D2B1FD328008CB0BC /* StyloFlowTests.swift */; };
 		71174C382B1FD328008CB0BC /* StyloFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C372B1FD328008CB0BC /* StyloFlowUITests.swift */; };
 		71174C3A2B1FD328008CB0BC /* StyloFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C392B1FD328008CB0BC /* StyloFlowUITestsLaunchTests.swift */; };
+		71174C6D2B1FE071008CB0BC /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C6C2B1FE071008CB0BC /* CanvasViewController.swift */; };
+		71174C6F2B1FE07D008CB0BC /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71174C6E2B1FE07D008CB0BC /* CanvasViewModel.swift */; };
+		71174C722B1FE180008CB0BC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 71174C712B1FE180008CB0BC /* SnapKit */; };
+		71174C752B1FE1B2008CB0BC /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 71174C742B1FE1B2008CB0BC /* RxBlocking */; };
+		71174C772B1FE1B2008CB0BC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 71174C762B1FE1B2008CB0BC /* RxCocoa */; };
+		71174C792B1FE1B2008CB0BC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 71174C782B1FE1B2008CB0BC /* RxRelay */; };
+		71174C7B2B1FE1B2008CB0BC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71174C7A2B1FE1B2008CB0BC /* RxSwift */; };
+		71174C7D2B1FE1B2008CB0BC /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 71174C7C2B1FE1B2008CB0BC /* RxTest */; };
+		7134F8692B25DFFF00D1942A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7134F8682B25DFFF00D1942A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,6 @@
 		71174C132B1FD325008CB0BC /* StyloFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyloFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71174C162B1FD325008CB0BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71174C182B1FD325008CB0BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71174C1A2B1FD325008CB0BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		71174C1D2B1FD325008CB0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71174C1F2B1FD328008CB0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71174C222B1FD328008CB0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71174C242B1FD328008CB0BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		71174C332B1FD328008CB0BC /* StyloFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyloFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71174C372B1FD328008CB0BC /* StyloFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyloFlowUITests.swift; sourceTree = "<group>"; };
 		71174C392B1FD328008CB0BC /* StyloFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyloFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71174C6C2B1FE071008CB0BC /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		71174C6E2B1FE07D008CB0BC /* CanvasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
+		7134F8682B25DFFF00D1942A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71174C792B1FE1B2008CB0BC /* RxRelay in Frameworks */,
+				71174C772B1FE1B2008CB0BC /* RxCocoa in Frameworks */,
+				71174C7B2B1FE1B2008CB0BC /* RxSwift in Frameworks */,
+				71174C722B1FE180008CB0BC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71174C7D2B1FE1B2008CB0BC /* RxTest in Frameworks */,
+				71174C752B1FE1B2008CB0BC /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +113,9 @@
 		71174C152B1FD325008CB0BC /* StyloFlow */ = {
 			isa = PBXGroup;
 			children = (
+				71174C462B1FDA20008CB0BC /* View */,
 				71174C162B1FD325008CB0BC /* AppDelegate.swift */,
 				71174C182B1FD325008CB0BC /* SceneDelegate.swift */,
-				71174C1A2B1FD325008CB0BC /* ViewController.swift */,
-				71174C1C2B1FD325008CB0BC /* Main.storyboard */,
 				71174C1F2B1FD328008CB0BC /* Assets.xcassets */,
 				71174C212B1FD328008CB0BC /* LaunchScreen.storyboard */,
 				71174C242B1FD328008CB0BC /* Info.plist */,
@@ -127,6 +140,32 @@
 			path = StyloFlowUITests;
 			sourceTree = "<group>";
 		};
+		71174C462B1FDA20008CB0BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7134F8672B25DFF700D1942A /* Main */,
+				71174C472B1FDA2C008CB0BC /* Canvas */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71174C472B1FDA2C008CB0BC /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				71174C6C2B1FE071008CB0BC /* CanvasViewController.swift */,
+				71174C6E2B1FE07D008CB0BC /* CanvasViewModel.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		7134F8672B25DFF700D1942A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7134F8682B25DFFF00D1942A /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +182,12 @@
 			dependencies = (
 			);
 			name = StyloFlow;
+			packageProductDependencies = (
+				71174C712B1FE180008CB0BC /* SnapKit */,
+				71174C762B1FE1B2008CB0BC /* RxCocoa */,
+				71174C782B1FE1B2008CB0BC /* RxRelay */,
+				71174C7A2B1FE1B2008CB0BC /* RxSwift */,
+			);
 			productName = StyloFlow;
 			productReference = 71174C132B1FD325008CB0BC /* StyloFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +206,10 @@
 				71174C2B2B1FD328008CB0BC /* PBXTargetDependency */,
 			);
 			name = StyloFlowTests;
+			packageProductDependencies = (
+				71174C742B1FE1B2008CB0BC /* RxBlocking */,
+				71174C7C2B1FE1B2008CB0BC /* RxTest */,
+			);
 			productName = StyloFlowTests;
 			productReference = 71174C292B1FD328008CB0BC /* StyloFlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +264,10 @@
 				Base,
 			);
 			mainGroup = 71174C0A2B1FD325008CB0BC;
+			packageReferences = (
+				71174C702B1FE180008CB0BC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 71174C142B1FD325008CB0BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +286,6 @@
 			files = (
 				71174C232B1FD328008CB0BC /* LaunchScreen.storyboard in Resources */,
 				71174C202B1FD328008CB0BC /* Assets.xcassets in Resources */,
-				71174C1E2B1FD325008CB0BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71174C1B2B1FD325008CB0BC /* ViewController.swift in Sources */,
+				71174C6F2B1FE07D008CB0BC /* CanvasViewModel.swift in Sources */,
 				71174C172B1FD325008CB0BC /* AppDelegate.swift in Sources */,
 				71174C192B1FD325008CB0BC /* SceneDelegate.swift in Sources */,
+				71174C6D2B1FE071008CB0BC /* CanvasViewController.swift in Sources */,
+				7134F8692B25DFFF00D1942A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +351,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		71174C1C2B1FD325008CB0BC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71174C1D2B1FD325008CB0BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		71174C212B1FD328008CB0BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,9 +493,9 @@
 				INFOPLIST_FILE = StyloFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +503,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.went.StyloFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -475,9 +525,9 @@
 				INFOPLIST_FILE = StyloFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,9 +535,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.went.StyloFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -607,6 +661,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71174C702B1FE180008CB0BC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71174C712B1FE180008CB0BC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71174C702B1FE180008CB0BC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		71174C742B1FE1B2008CB0BC /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		71174C762B1FE1B2008CB0BC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		71174C782B1FE1B2008CB0BC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		71174C7A2B1FE1B2008CB0BC /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		71174C7C2B1FE1B2008CB0BC /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71174C732B1FE1B2008CB0BC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71174C0B2B1FD325008CB0BC /* Project object */;
 }
